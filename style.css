@@ -1,26 +1,28 @@
 html,body {
  height:100%;  
  margin:0px;
+ background-color: rgb(223, 214, 185);
 }
     #nav-bar
     {
         list-style-type: none;
         margin: 0;
         padding: 0;
-        width: 100px;
+        width: 250px;
         height:100%;
-        background-color: lightblue;
+        background-color: whitesmoke;
         position: relative;
     }
     li a{
-        text-align:center;
+        text-align:left;
         display:block;
         padding-top:5px;
         padding-bottom:5px;
+        padding-left: 5%;
     }
     li a:hover
     {
-        background-color:gray;
+        background-color:rgb(172, 165, 160);
     }
     #hide-button a:hover
     {
