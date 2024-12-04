@@ -28,19 +28,18 @@
         <!-- Side Navigation Bar -->
         <div id="nav-bar">
             <div class="container-fluid">
-                <img class="logo" src="images/BPALicons-1-11.jpg">
+                <img  src="images/BPAMapLogo.png" class="logo">
             </div>
             <ul>
-                <li><a>Produce</a></li>
-                <li><a>Bakery</a></li>
-                <li><a>Meat</a></li>
-                <li><a>Animal Products</a></li>
-                <li><a>Herbs and Spices</a></li>
-                <li><a>Jams and Honey</a></li>
-                <li><a>Nuts and Seeds</a></li>
-                <li><a>Flowers</a></li>
-                <li><a>Crafts</a></li>
-                <li id="hide-button"><a>Hide</a></li>
+                <li><img src="images/BPALicons-1-02.png"><a>Produce</a></li>
+                <li><img src="images/BPALicons-1-06.png"><a>Bakery</a></li>
+                <li><img src="images/BPALicons-1-05.png"><a>Meat</a></li>
+                <li><img src="images/BPALicons-1-04.png"><a>Animal Products</a></li>
+                <li><img src="images/BPALicons-1-09.png"><a>Herbs and Spices</a></li>
+                <li><img src="images/BPALicons-1-08.png"><a>Jams and Honey</a></li>
+                <li><img src="images/BPALicons-1-07.png"><a>Nuts and Seeds</a></li>
+                <li><img src="images/BPALicons-1-03.png"><a>Flowers</a></li>
+                <li><img src="images/BPALicons-1-10.png"><a>Crafts</a></li>
             </ul>
         </div>
 
@@ -49,6 +48,28 @@
             <img src="images/BPAmap-1.jpg" alt="Image">
         </div>
     </div>
+
+    <button id="hide-button" onclick="toggleNav()">Hide</button>
+    </div>
+
+    <script>
+        // Function to toggle the navigation bar
+        function toggleNav() {
+            var nav = document.getElementById('nav-bar');
+            var button = document.getElementById('hide-button');
+            
+            // If the nav bar is hidden, slide it in, otherwise slide it out
+            if (nav.style.left === '-250px') {
+                nav.style.left = '0'; // Slide in
+                button.style.left = '250px'; // Move button inside the nav bar
+                button.innerHTML = 'Hide'; // Change button text
+            } else {
+                nav.style.left = '-250px'; // Slide out
+                button.style.left = '0'; // Move button outside the nav bar
+                button.innerHTML = 'Show'; // Change button text
+            }
+        }
+    </script>
 
 </body>
 </html>
