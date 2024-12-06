@@ -14,10 +14,6 @@
         padding-bottom:5px;
         padding-left: 5%;
     }
-    li a:hover
-    {
-        background-color:rgb(172, 165, 160);
-    }
 
     body {
         background-color: #ded4cc;
@@ -116,4 +112,15 @@
         padding-left: 5%;
         padding-right: 5%;
         text-align: center;
+    }
+
+    button {
+        border: #ded4cc;
+        background-color: #fdfdfd;
+    }
+
+    ul li button:hover {
+        cursor: pointer;
+        background-color:rgb(172, 165, 160);
+        color: #501c1c;
     }

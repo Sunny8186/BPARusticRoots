@@ -35,21 +35,21 @@
                 <h6 class ="info">April - October on Saturdays</h6>
                 <h6 class ="info">Hours: 7a.m. - 1:30p.m.</h6>
             <ul>
-                <li><img src="images/BPALicons-1-02.png"><a>Produce</a></li>
-                <li><img src="images/BPALicons-1-06.png"><a>Bakery</a></li>
-                <li><img src="images/BPALicons-1-05.png"><a>Meat</a></li>
-                <li><img src="images/BPALicons-1-04.png"><a>Animal Products</a></li>
-                <li><img src="images/BPALicons-1-09.png"><a>Herbs and Spices</a></li>
-                <li><img src="images/BPALicons-1-08.png"><a>Jams and Honey</a></li>
-                <li><img src="images/BPALicons-1-07.png"><a>Nuts and Seeds</a></li>
-                <li><img src="images/BPALicons-1-03.png"><a>Flowers</a></li>
-                <li><img src="images/BPALicons-1-10.png"><a>Crafts</a></li>
+                <li><img src="images/BPALicons-1-02.png"><a><button onclick="changeImage('images/BPAmap-Produce.png')">Produce</button></a></li>
+                <li><img src="images/BPALicons-1-06.png"><a><button onclick="changeImage('images/BPAmap-Bakery.png')">Bakery</button></a></li>
+                <li><img src="images/BPALicons-1-05.png"><a><button onclick="changeImage('images/BPAmap-Meats.png')">Meat</button></a></li>
+                <li><img src="images/BPALicons-1-04.png"><a><button onclick="changeImage('images/BPAmap-Animal.png')">Animal Products</button></a></li>
+                <li><img src="images/BPALicons-1-09.png"><a><button onclick="changeImage('images/BPAmap-Spices.png')">Herbs and Spices</button></a></li>
+                <li><img src="images/BPALicons-1-08.png"><a><button onclick="changeImage('images/BPAmap-Jams.png')">Jams and Honey</button></a></li>
+                <li><img src="images/BPALicons-1-07.png"><a><button onclick="changeImage('images/BPAmap-Nuts.png')">Nuts and Seeds</button></a></li>
+                <li><img src="images/BPALicons-1-03.png"><a><button onclick="changeImage('images/BPAmap-Flowers.png')">Flowers</button></a></li>
+                <li><img src="images/BPALicons-1-10.png"><a><button onclick="changeImage('images/BPAmap-Crafts.png')">Crafts</button></a></li>
             </ul>
         </div>
 
         <!-- Image -->
         <div id="image-container">
-            <img src="images/BPAmap-1.jpg" alt="Image">
+            <img id="image" src="images/BPAmap-1.jpg" alt="Image">
         </div>
     </div>
 
@@ -71,6 +71,11 @@
                 button.style.left = '0'; // Move button outside the nav bar
                 button.innerHTML = 'Show'; // Change button text
             }
+        }
+
+        function changeImage(imageSrc) {
+            const imgElement = document.getElementById('image');
+            imgElement.src = imageSrc;
         }
     </script>
 
